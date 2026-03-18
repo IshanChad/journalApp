@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active: dev
+
+#we might use different database server for dev and prod so different yml too
+
+#if we don't use application.yml then need to specify profile in environment variable in edit configuraion
+# or at command line
+
+#we can do logging work in xml file also using Appenders and Logger configurations
+# to enable trace and debug for Logger
+logging:
+  level:
+    net:
+      engineeringdigest:
+        journalApp: DEBUG
